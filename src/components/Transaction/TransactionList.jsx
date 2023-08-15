@@ -10,7 +10,7 @@ function TransactionList() {
     transactions.map(transaction => (
         <div key={transaction.id}>
             <p>{transaction.description}</p>
-            <span>{transaction.amout}</span>
+            <span>{transaction.amount}</span>
             <button onClick={() => {
                 deleteTransaction(transaction.id)
             }}>Delete</button>

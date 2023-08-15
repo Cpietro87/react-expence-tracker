@@ -19,7 +19,7 @@ export const GlobalProvider = ({ children }) => {
     const localData = localStorage.getItem("transactions");
     return localData ? JSON.parse(localData) : initialState;
   });
-
+  // para que este a la escucha del cambio del state y lo modifique en el localStorage
   useEffect(() => {
     localStorage.setItem("transactions", JSON.stringify(state));
   }, [state]);

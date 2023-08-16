@@ -37,8 +37,8 @@ export function ExpenseChart() {
       <VictoryPie
         colorScale={["#e74c3c", "#2ecc71"]}
         data={[
-          { x: "Expenses", y: expensesPercentage },
-          { x: "Incomes", y: incomesPercentage },
+          { x: "Gastos", y: expensesPercentage },
+          { x: "Ingresos", y: incomesPercentage },
         ]}
         animate={{
           duration: 2000,

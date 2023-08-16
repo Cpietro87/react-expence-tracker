@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { useGlobalState } from "../../context/GlobalState";
 
-function TransactionForm() {
-
+export function TransactionForm() {
   const { addTransaction } = useGlobalState();
 
   const [description, setDescription] = useState("");

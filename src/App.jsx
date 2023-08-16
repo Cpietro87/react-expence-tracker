@@ -1,9 +1,10 @@
 import { GlobalProvider } from "./context/GlobalState";
-import Header from "./components/Header";
-import Balance from "./components/Balance";
-import TransactionForm from "./components/Transaction/TransactionForm";
-import TransactionList from "./components/Transaction/TransactionList";
-import IncomeExpenses from "./components/IncomeExpenses";
+import { Header } from "./components/Header";
+import { Balance } from "./components/Balance";
+import { IncomeExpenses } from "./components/IncomeExpenses";
+import { TransactionList } from "./components/transactions/TransactionList";
+import { TransactionForm } from "./components/transactions/TransactionForm";
+import { ExpenseChart } from "./components/ExpenseChart";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
                 <TransactionForm />
               </div>
               <div className="flex-1 flex flex-col">
-                {/* <ExpenseChart /> */}
+                <ExpenseChart />
                 <TransactionList />
               </div>
             </div>
@@ -27,7 +28,7 @@ function App() {
         </div>
       </div>
     </GlobalProvider>
-  )
+  );
 }
 
-export default App
+export default App;

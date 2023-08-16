@@ -1,8 +1,7 @@
-
-import { useGlobalState} from '../../context/GlobalState'
+import { useGlobalState } from "../../context/GlobalState";
 import { TransactionItem } from "./TransactionItem";
 
-function TransactionList() {
+export function TransactionList() {
   const { transactions } = useGlobalState();
 
   if (transactions.length === 0) {
@@ -28,5 +27,3 @@ function TransactionList() {
     </div>
   );
 }
-
-export default TransactionList
